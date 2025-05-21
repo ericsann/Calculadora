@@ -12,50 +12,51 @@
 <body>
   <section class="container">
     <table class="tabela-imc">
-      <caption>Tabela IMC</caption>
+      <caption>Calculadora</caption>
       <thead>
         <tr>
-          <th class="titulo-imc">IMC</th>
-          <th class="titulo-imc">Resultado</th>
+          <th colspan="4"><input type="text" class="display"></th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Menos do que 18,5</td>
-          <td>Abaixo do peso normal</td>
+          <td><button class="btn btn-clear">C</button></td>
+          <td><button class="btn btn-num">(</button></td>
+          <td><button class="btn btn-num">)</button></td>
+          <td><button class="btn btn-num">/</button></td>
         </tr>
         <tr>
-          <td>Entre 18,5 e 24,9</td>
-          <td>Peso normal</td>
+          <td><button class="btn btn-num">7</button></td>
+          <td><button class="btn btn-num">8</button></td>
+          <td><button class="btn btn-num">9</button></td>
+          <td><button class="btn btn-num">*</button></td>
         </tr>
         <tr>
-          <td>Entre 25 e 29,9</td>
-          <td>Sobrepeso</td>
+          <td><button class="btn btn-num" data-input>4</button></td>
+          <td><button class="btn btn-num" data-input>5</button></td>
+          <td><button class="btn btn-num" data-input>6</button></td>
+          <td><button class="btn btn-num" data-input>+</button></td>
         </tr>
         <tr>
-          <td>Entre 30 e 34,9</td>
-          <td>Obesidade Grau 1</td>
+          <td><button class="btn btn-num" data-input>1</button></td>
+          <td><button class="btn btn-num" data-input>2</button></td>
+          <td><button class="btn btn-num" data-input>3</button></td>
+          <td><button class="btn btn-num" data-input>-</button></td>
         </tr>
         <tr>
-          <td>Enre 35 e 39,9</td>
-          <td>Obesidade Grau 2</td>
+          <td><button class="btn btn-num" data-input>.</button></td>
+          <td><button class="btn btn-num" data-input>0</button></td>
+          <td><button class="btn btn-del" data-input>&laquo;</button></td>
+          <td><button class="btn btn-eq" data-input>=</button></td>
         </tr>
-        <tr>
-          <td>Mais do que 40</td>
-          <td>Obesidade Grau 3</td>
-        </tr>
-      </tbody>
-    
-    </table>
-    <form action="/" method="post" class="form">
-        <h1>Calcule seu IMC</h1>
-        <input type="text" placeholder="Peso" id="peso">
-        <input type="text" placeholder="Altura" id="altura">
-        <button type="submit">Enviar</button>
-      </form>
 
-      <div class="resultado"></div>
-</section>
+      </tbody>
+
+    </table>
+
+
+    <div class="resultado"></div>
+  </section>
 
 
 
